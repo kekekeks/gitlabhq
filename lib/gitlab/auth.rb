@@ -48,7 +48,7 @@ module Gitlab
         extern_uid: uid,
         provider: provider,
         name: name,
-        username: email.match(/^[^@]*/)[0],
+        username: username: uid.match(/=[^,]*/)[0][1, 90000],
         email: email,
         password: password,
         password_confirmation: password,
